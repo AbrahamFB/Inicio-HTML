@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>The World in my Len's - Galeria</title>	<!--Título de la página!-->
+    
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	<!--sirve para optimizar los sitios para móviles, esta etiqueta ayuda a definir el ancho, alto y escala del área usada por el navegador para mostrar contenido-->
+    <meta charset="utf-8">	<!--Tipo de caracteres que tiene la página-->
+
+	<link rel="icon" href="../../index/img/logo/logo.ico">	<!--Icono de la página!-->
+	<link rel="stylesheet" href="../../index/css/estilo.css">	<!--Hoja de estilo!-->
+	<link rel="stylesheet" href="css/estilo - galeria.css">	
+	<link rel="stylesheet" href="Bootstrap/bootstrap.min.css">	<!-- JSLiberia minificada-->
+	<link rel="stylesheet" href="css/fontello-42db868d/css/fontello.css">	<!--El uso de los iconos!-->
+
+	
+	<script src="../../index/JavaScript/javascript.js"></script>	<!--JavaScript!-->	
+	<script src="../../index/JavaScript/animacion-sb.js"></script>	<!--Para la animación de subir y bajar!-->
+	<script src="../../index/JavaScript/carga-total.js"></script>	<!--Para el uso del contenedor carga, al inicio de la página!-->
+	<script src="JavaScript/javascript - galeria.js"></script>	<!--Para el uso del contenedor carga, al inicio de la página!-->
+	<script src="jquery/jquery.min.js"></script>	
+	<script src="Bootstrap/bootstrap.min.js"></script>	<!-- Compilado y minificado Bootstrap JavaScript -->
+</head>
+
+<body class="body.galeria">
+	<a name="arriba"></a>	<!--Parte de arriba, se usa para el botón final!-->
+
+	<div id="contenedor_carga">	<!--Contenedor que aparece al inicio, mientras carga la página --->
+		<div id="carga"></div>
+	</div>
+		
+
+	<a href="../../index/index.html" class="ir-arriba icon-up-circle" id="#foward">&#124;</a>	<!--Botón para ir al inicio!-->
+	
+	<div id="myCarouselCustom" class="carousel slide" data-ride="carousel">
+    <!-- Indicadores -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarouselCustom" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarouselCustom" data-slide-to="1"></li>
+        <li data-target="#myCarouselCustom" data-slide-to="2"></li>
+        <li data-target="#myCarouselCustom" data-slide-to="3"></li>
+        <li data-target="#myCarouselCustom" data-slide-to="4"></li>
+        <li data-target="#myCarouselCustom" data-slide-to="5"></li>
+        <li data-target="#myCarouselCustom" data-slide-to="6"></li>
+        <li data-target="#myCarouselCustom" data-slide-to="7"></li>
+        <li data-target="#myCarouselCustom" data-slide-to="8"></li>
+        <li data-target="#myCarouselCustom" data-slide-to="9"></li>
+	</ol>
+	
+    <!-- Galería Carrucel -->
+    <div class="carousel-inner">
+		
+        <div class="item active">
+            <img src="img/carrucel/1.jpg" alt="">
+            <div class="carousel-caption">
+                <h3>Paisajes</h3>
+                <p>Capturo la belleza que nos regala la madre Tierra</p>
+			</div>
+        </div>
+  
+        <div class="item">
+            <img src="img/carrucel/2.jpg" alt="">
+            <div class="carousel-caption">
+                <h3>Animales</h3>
+                <p>Sesión de Fotos a tus mascotas</p>
+            </div>
+        </div>
+        
+        <div class="item">
+            <img src="img/carrucel/3.jpg" alt="">
+            <div class="carousel-caption">
+                <h3>Personal</h3>
+                <p>Uso General, Calidad profecional y Costo accesible</p>
+            </div>
+        </div>
+		
+		<div class="item">
+            <img src="img/carrucel/4.jpg" alt="">
+            <div class="carousel-caption">
+                <h3>Boda</h3>
+                <p>Tomas perfectas de tus momentos especiales</p>
+            </div>
+        </div>
+		
+		<div class="item">
+            <img src="img/carrucel/5.jpg" alt="">
+            <div class="carousel-caption">
+                <h3>Urbano</h3>
+                <p>Lo mejor de la sociedad Urbana y Rural</p>
+            </div>
+        </div>
+		
+		<div class="item">
+            <img src="img/carrucel/6.jpg" alt="">
+            <div class="carousel-caption">
+                <h3>Graduación</h3>
+                <p>Que tu esfuerzo no solo quede en un papel</p>
+            </div>
+        </div>
+		
+		<div class="item">
+            <img src="img/carrucel/7.jpg" alt="">
+            <div class="carousel-caption">
+                <h3>Aéreo</h3>
+                <p>¡Que no te limite la altura!</p>
+            </div>
+        </div>
+		
+		<div class="item">
+            <img src="img/carrucel/8.jpg" alt="">
+            <div class="carousel-caption">
+				<h3>HDR</h3>
+				<p>Edición profesional y Calidad High Dinamyc Range</p>
+            </div>
+        </div>	
+		
+		<div class="item">
+            <video src="img/carrucel/9.mp4" autoplay loop muted></video>
+            <div class="carousel-caption">
+                <h3>Cámara Lenta</h3>
+				<p>960 <i>fps</i> en FULL HD</p>
+            </div>
+        </div>
+		
+		<div class="item">
+            <img src="img/carrucel/10.jpg" alt="">
+            <div class="carousel-caption">
+                <h3>Puebla</h3>
+                <p>Mi bello Estado de residencia</p>
+            </div>
+        </div>
+		
+    </div>
+		</div>
+	<!--Eliminar va en la linea 120-->
+    <!-- Controles -->
+	<section id="botones">
+		<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#myCarousel" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	<!--linea 120-->
+		<!-- Controles personalizados -->
+		<a href="javascript:void(0);" id="prevBtn">Prev Slide</a>
+		<a href="javascript:void(0);" id="nextBtn">Next Slide</a>
+	</section>
+
+ <footer role="contentinfo">	<!--norma WAI-ARIA para personas con problmeas-->
+	 <a name="sobre-mi"></a>	<!--Parte de arriba, se usa para el botón final!-->
+
+ 	<div class="contenedor-footer-total">
+        
+		<div class="contenedor-cuerpo">
+
+			<div class="columna1">
+				<h1>Más Sobre Mí</h1>
+				<p>Soy un fotógrafo egresado de la BUAP. Mucho antes de ser fotógrafo decidí estudiar Relaciones Internacionales en la UNAM FES Aragón, este camino me llevo a desarrollarme profesionalmente en en esta rama. Afortunadamente este mismo camino me encontró de nuevo con algo que creativamente me hacia falta, la fotografía. La fotografía me ha permitido rebasar muchos muros personales, me ha enfrentado a situaciones en las que se ha puesto a prueba mi técnica y creatividad, cada día desde que me dedico a esta disciplina, he aprendido cosas nuevas, he encontrado gente maravillosa a través de este camino, simplemente amo lo que hago. La mayoría del tiempo me encuentro alimentando a mi cerebro de imágenes, me encanta el cine, la animación, sin música mi vida estaría vacía y sin libros sería un caos.</p>
+			</div>
+
+			<div class="columna2">
+				<h1>Redes Sociales</h1>	
+				
+					<div class="row">
+						<a href="www.instagram.com/tworldlens"><img src="../../index/Footer/ico/Instagram-icon.png" alt=""></a>
+						<label>Sigueme en Instagram</label>
+					</div>
+	
+					<div class="row">
+						<a href="wwww.facebook.com.mx/tworldlens"><img src="../../index/Footer/ico/Facebook-icon.png" alt=""></a>
+						<label>Sigueme en Facebook</label>
+					</div>
+	
+					<div class="row">
+						<a href="www.plus.google.com/tworldlens"><img src="../../index/Footer/ico/Google-icon.png" alt=""></a>
+                        <label>Sigueme en Google+</label>
+                   </div>
+					
+					<div class="row">
+						<a href="www.youtube.com.mx/tworldlens"><img src="../../index/Footer/ico/Youtube-icon.png" alt=""></a>
+						<label>Sigueme en Youtube</label>
+					</div>
+					<div class="row">
+						
+						<a href="www.twitter.com.es/tworldlens"><img src="../../index/Footer/ico/Twitter-icon.png" alt=""></a>
+						<label>Sigueme en Twitter</label>
+					</div>
+			</div>
+
+			<div class="columna3">
+				
+				<h1>Contacto Trabajo</h1>
+
+					<div class="row2">
+                       <img src="../../index/Footer/ico/home-icon.png" alt="">
+                       <label>Priv. Puebla 10, Santiago Momoxpan, Ampliación Momoxpa, 72760 Pue.</label>
+                    </div>
+
+                    <div class="row2">
+                        <img src="../../index/Footer/ico/email-icon.png" alt="">
+						
+						<label><a href="mailto:contact@twl.com.mx?subject=Contact">contact@twl.com.mx</a></label>
+                    </div>	
+				
+                    <div class="row2">
+                        <img src="../../index/Footer/ico/Mobile-Smartphone-icon.png" alt="">
+                        <label>01 222 22 576 97</label>
+                    </div>
+
+			</div>
+
+		</div>
+        
+	 </div>
+        
+	 <div class="contenedor-footer">
+		 <div class="pie">
+			 <div class="d-r">
+				 <p class="copyright">&copy; 2018 | <a href="">TWL</a> | Todos los derechos reservados D.R. &reg;</p>
+				 <p class="footer-links"><a href="https://1drv.ms/t/s!AtZUB2N4hUE-gdJpOB0rw5zH2Erz-g">Términos y Condiciones</a> &ensp;| &ensp; <a href="http://buap.mx">Mi Universidad</a> &ensp;| &ensp; <a href="https://www.w3.org/WAI/standards-guidelines/aria/">Accesibilidad</a></p>
+			 </div>				
+		 </div>
+	 </div>
+	<a name="abajo"></a><!-- atajo para ir al final de la página!-->
+</footer>
+</body>
+
+</html>
